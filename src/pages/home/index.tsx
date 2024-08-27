@@ -1,4 +1,4 @@
-import React from 'react';
+// import React from 'react';
 import { Typography } from 'antd';
 import CustomSlider from '../../components/CustomSlider';
 import FileUploader from '../../components/FileUploader';
