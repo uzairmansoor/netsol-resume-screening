@@ -1,28 +1,25 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
-import { Button, ConfigProvider, Input, Layout, Menu, Space } from 'antd';
+import { ConfigProvider, Layout, Menu } from 'antd';
 import About from './pages/about';
 import Home from './pages/home';
 
 const { Header, Content } = Layout;
 
 function App() {
-
   return (
-    <>
-      {/* <ConfigProvider
-        theme={{
-          components: {
-            Button: {
-              colorPrimary: '#00b96b',
-            },
-            Input: {
-              colorPrimary: '#eb2f96',
-            }
+    <ConfigProvider
+      theme={{
+        components: {
+          Button: {
+            colorPrimary: '#00b96b',
           },
-        }}
-      >
-      </ConfigProvider> */}
+          Input: {
+            colorPrimary: '#eb2f96',
+          }
+        },
+      }}
+    >
       <Router>
         <Layout className="layout">
           <Header>
@@ -45,7 +42,7 @@ function App() {
           </Content>
         </Layout>
       </Router>
-    </>
+    </ConfigProvider>
   );
 }
 
