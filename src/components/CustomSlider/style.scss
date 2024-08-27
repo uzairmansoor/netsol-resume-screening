@@ -1,0 +1,11 @@
+.custom-button {
+    background-color: #2e92ee !important;
+    border-color: #2e92ee !important;
+  }
+  
+  .custom-button:hover,
+  .custom-button:focus {
+    background-color: darken(#2e92ee, 10%) !important; /* Darken the color on hover */
+    border-color: darken(#2e92ee, 10%) !important;
+  }
+  

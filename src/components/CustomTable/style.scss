@@ -1,0 +1,57 @@
+
+  .ant-table table {
+    border-spacing: 0 0.5rem;
+  }
+  
+.ant-table-wrapper td.ant-table-column-sort{
+    background: #188fff00; 
+  }
+  
+  .ant-table-thead > tr > th {
+    background: transparent !important;
+    position: relative;
+    padding-bottom: 12px;
+  }
+  
+  
+  .ant-table-thead > tr > th::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: rgba(135, 206, 250, 0.6); /* Light blue shadow */
+  }
+  
+  .ant-table-column-sort {
+    color: inherit !important; /* Keep the color of the text the same */
+  }
+  
+  .ant-table-tbody > tr:nth-child(odd) {
+    background-color: #d9eaff; /* Light blue color */
+  }
+  
+  .ant-table-tbody > tr:nth-child(even) {
+    background-color: #f0f8ff; /* Even lighter blue color */
+  }
+  
+  .ant-table-tbody > tr {
+    border-radius: 10px;
+    overflow: hidden; /* Ensure rounded corners are visible */
+    margin-bottom: 10px; /* Add some spacing between rows */
+    background-clip: padding-box; /* Ensure background color does not overlap with margin */
+  }
+  
+  .ant-table-tbody > tr > td:first-child {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+  }
+  
+  .ant-table-tbody > tr > td:last-child {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+  .ant-table-cell{
+    padding: 8px !important;
+  }
